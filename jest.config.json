@@ -3,8 +3,10 @@
   "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "d.ts"],
   "moduleNameMapper": {
     "^.+\\.svg$": "jest-svg-transformer",
+    "^.+\\.(png|jpg|gif)$": "<rootDir>/test/mocks/fileMock.js",
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
     "^svgs/(.*)": "<rootDir>/src/svgs/$1",
+    "^images/(.*)": "<rootDir>/src/images/$1",
     "^app/(.*)": "<rootDir>/src/app/$1",
     "^test/(.*)": "<rootDir>/test/$1"
   },

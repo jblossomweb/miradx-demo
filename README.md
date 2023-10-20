@@ -22,7 +22,7 @@ npm run dev
 
 #### React Pages
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
 
 You can start editing the page by modifying `src/app/pages/HomePage`. The page auto-updates as you edit the file.
 The Route for this page is defined by `src/app/index.ts`.
@@ -67,4 +67,4 @@ To run coverage report:
 npm run test:coverage
 ```
 
-A full list of commands can be found in the [`package.json`](https://github.com/jblossomweb/vite-scaffold-2023/blob/main/package.json)
+A full list of commands can be found in the [`package.json`](https://github.com/jblossomweb/miradx-demo/blob/main/package.json)

@@ -6,7 +6,7 @@ exports[`app/pages/NotFoundPage stories Sample matches markup snapshot 1`] = `
     class="text-center"
   >
     <header
-      class="min-h-screen flex flex-col items-center justify-center"
+      class="flex flex-col items-center justify-start p-4"
     >
       <h1>
         Sorry! That page was not found.

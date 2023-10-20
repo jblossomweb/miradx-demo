@@ -6,26 +6,107 @@ exports[`app/pages/HomePage stories Sample matches markup snapshot 1`] = `
     class="text-center"
   >
     <header
-      class="min-h-screen flex flex-col items-center justify-center"
+      class="flex flex-col items-center justify-start p-4"
     >
-      <img
-        alt="logo"
-        class="sc-bdnyFh dokdYg animate-spin"
-      />
-      <p>
-        Edit 
-        <code>
-          src/app/pages/HomePage
-        </code>
-         and save to reload.
-      </p>
       <a
-        href="https://reactjs.org"
-        rel="noopener noreferrer"
-        target="_blank"
+        class="border-0 cursor-pointer"
+        href="/"
       >
-        Learn React
+        <div
+          class="rounded-full bg-white p-4 border-4 overflow-hidden mb-8"
+        >
+          <img
+            class="w-80"
+            src=""
+          />
+        </div>
       </a>
+      <div
+        style="position: fixed; z-index: 9999; top: 16px; left: 16px; right: 16px; bottom: 16px; pointer-events: none;"
+      />
+      <h1
+        class="text-3xl mb-4"
+      >
+        Create a New Account
+      </h1>
+      <h2
+        class="text-xl mb-8"
+      >
+        Step 1
+      </h2>
+      <form
+        class="w-96 animate-fade"
+      >
+        <div
+          class="text-left mb-4"
+        >
+          <label
+            class="flex flex-col items-left font-medium"
+          >
+            <span
+              class="after:ml-1 after:text-red-500 after:content-['*']"
+            >
+              Email
+            </span>
+            <input
+              aria-label="Email"
+              class="w-full h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+              required=""
+              type="email"
+              value=""
+            />
+          </label>
+        </div>
+        <div
+          class="text-left mb-4"
+        >
+          <label
+            class="flex flex-col items-left font-medium"
+          >
+            <span
+              class="after:ml-1 after:text-red-500 after:content-['*']"
+            >
+              Password
+            </span>
+            <input
+              aria-label="Password"
+              class="w-full h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+              required=""
+              type="password"
+              value=""
+            />
+          </label>
+        </div>
+        <div
+          class="flex flex-start items-center space-x-1 mb-4"
+        >
+          <button
+            class="font-bold py-2 px-4 rounded-full flex items-center cursor-not-allowed text-gray-400 bg-gray-500"
+            disabled=""
+            type="submit"
+          >
+            Next Step
+            <span
+              class="ml-1"
+            >
+              <svg
+                aria-hidden="true"
+                class="StyledIconBase-sc-ea9ulj-0 kbSUTo"
+                fill="currentColor"
+                focusable="false"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 6h2v12h-2zM4 13h8.586l-4.293 4.293 1.414 1.414L16.414 12 9.707 5.293 8.293 6.707 12.586 11H4z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </form>
     </header>
   </div>
 </DocumentFragment>

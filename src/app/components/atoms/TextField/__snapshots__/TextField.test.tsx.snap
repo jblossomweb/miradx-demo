@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/components/atoms/TextField stories Controlled matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Controlled TextField
+    </span>
+    <input
+      aria-label="Controlled TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      type="text"
+      value="Controlled Value"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories ControlledPassword matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Password TextField
+    </span>
+    <input
+      aria-label="Password TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      type="password"
+      value="PasswordValue"
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories Disabled matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium text-gray-400"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Disabled TextField
+    </span>
+    <input
+      aria-label="Disabled TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent cursor-not-allowed"
+      disabled=""
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories Email matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Email TextField
+    </span>
+    <input
+      aria-label="Email TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      type="email"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories FullWidth matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Full Width TextField
+    </span>
+    <input
+      aria-label="Full Width TextField"
+      class="w-full h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories NoLabel matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <input
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories NoLabelPlaceholder matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <input
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      placeholder="Sample Placeholder"
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories NoLabelRequired matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500 after:content-['*']"
+    />
+    <input
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      required=""
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories Password matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Password TextField
+    </span>
+    <input
+      aria-label="Password TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      type="password"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories Placeholder matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Sample TextField
+    </span>
+    <input
+      aria-label="Sample TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      placeholder="Sample Placeholder"
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories Required matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500 after:content-['*']"
+    >
+      Required TextField
+    </span>
+    <input
+      aria-label="Required TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      required=""
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories Sample matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Sample TextField
+    </span>
+    <input
+      aria-label="Sample TextField"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-transparent"
+      type="text"
+      value=""
+    />
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/TextField stories WithError matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      TextField With Error
+    </span>
+    <input
+      aria-label="TextField With Error"
+      class="w-80 h-8 mr-2 py-4 px-1 text-black rounded ring-1 focus:ring-blue-500 ring-red-500"
+      type="text"
+      value=""
+    />
+    <span
+      class="text-red-500 font-bold italic"
+    >
+      Something is wrong with your input
+    </span>
+  </label>
+</DocumentFragment>
+`;

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/components/atoms/Checkbox stories Checked matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex items-center font-medium cursor-pointer"
+  >
+    <input
+      checked=""
+      class="w-4 h-4 mr-2 cursor-pointer rounded focus:ring-blue-500 focus:ring-1"
+      type="checkbox"
+    />
+     Checked Checkbox
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Checkbox stories Disabled matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex items-center font-medium text-gray-400 cursor-not-allowed"
+  >
+    <input
+      class="w-4 h-4 mr-2 cursor-not-allowed rounded focus:ring-blue-500 focus:ring-1"
+      disabled=""
+      type="checkbox"
+    />
+     Disabled Checkbox
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Checkbox stories Sample matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex items-center font-medium cursor-pointer"
+  >
+    <input
+      class="w-4 h-4 mr-2 cursor-pointer rounded focus:ring-blue-500 focus:ring-1"
+      type="checkbox"
+    />
+     Sample Checkbox
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Checkbox stories Unchecked matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex items-center font-medium cursor-pointer"
+  >
+    <input
+      class="w-4 h-4 mr-2 cursor-pointer rounded focus:ring-blue-500 focus:ring-1"
+      type="checkbox"
+    />
+     Unchecked Checkbox
+  </label>
+</DocumentFragment>
+`;

@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/components/atoms/Button stories Disabled matches markup snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="font-bold py-2 px-4 rounded-full flex items-center cursor-not-allowed text-gray-400 bg-gray-500"
+    disabled=""
+    type="button"
+  >
+    Disabled Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Button stories DisabledIcon matches markup snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="font-bold py-2 px-4 rounded-full flex items-center cursor-not-allowed text-gray-400 bg-gray-500"
+    disabled=""
+    type="button"
+  >
+    Disabled Button
+    <span
+      class="ml-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="StyledIconBase-sc-ea9ulj-0 kbSUTo animate-spinfast"
+        fill="currentColor"
+        focusable="false"
+        height="24"
+        role="status"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 22c5.421 0 10-4.579 10-10h-2c0 4.337-3.663 8-8 8s-8-3.663-8-8c0-4.336 3.663-8 8-8V2C6.579 2 2 6.58 2 12c0 5.421 4.579 10 10 10z"
+        />
+      </svg>
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Button stories Icon matches markup snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="font-bold py-2 px-4 rounded-full flex items-center cursor-pointer text-white bg-teal-600 hover:bg-teal-800"
+    type="button"
+  >
+    Sample Button
+    <span
+      class="ml-1"
+    >
+      <svg
+        aria-hidden="true"
+        class="StyledIconBase-sc-ea9ulj-0 kbSUTo"
+        fill="currentColor"
+        focusable="false"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM4 8a3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4 3.91 3.91 0 0 0-4 4zm6 0a1.91 1.91 0 0 1-2 2 1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2zM4 18a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v1h2v-1a5 5 0 0 0-5-5H7a5 5 0 0 0-5 5v1h2z"
+        />
+      </svg>
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Button stories Sample matches markup snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="font-bold py-2 px-4 rounded-full flex items-center cursor-pointer text-white bg-teal-600 hover:bg-teal-800"
+    type="button"
+  >
+    Sample Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Button stories Slate matches markup snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="font-bold py-2 px-4 rounded-full flex items-center cursor-pointer text-white bg-slate-500 hover:bg-slate-700"
+    type="button"
+  >
+    Slate Button
+  </button>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Button stories Teal matches markup snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="font-bold py-2 px-4 rounded-full flex items-center cursor-pointer text-white bg-teal-600 hover:bg-teal-800"
+    type="button"
+  >
+    Teal Button
+  </button>
+</DocumentFragment>
+`;

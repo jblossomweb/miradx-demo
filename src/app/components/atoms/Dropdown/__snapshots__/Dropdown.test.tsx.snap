@@ -1,0 +1,396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app/components/atoms/Dropdown stories Controlled matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Controlled Dropdown
+    </span>
+    <select
+      aria-label="Controlled Dropdown"
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-pointer"
+    >
+      <option
+        class=""
+        selected=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories Disabled matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium text-gray-400"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Disabled Dropdown
+    </span>
+    <select
+      aria-label="Disabled Dropdown"
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-not-allowed"
+      disabled=""
+    >
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories FullWidth matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Full Width Dropdown
+    </span>
+    <select
+      aria-label="Full Width Dropdown"
+      class="w-full h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-pointer"
+    >
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories NoLabel matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <select
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-pointer"
+    >
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories NoLabelRequired matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500 after:content-['*']"
+    />
+    <select
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-pointer"
+      required=""
+    >
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories Placeholder matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Sample Dropdown
+    </span>
+    <select
+      aria-label="Sample Dropdown"
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-pointer"
+    >
+      <option
+        class="text-gray-500"
+        disabled=""
+        selected=""
+        value=""
+      >
+        Sample Placeholder
+      </option>
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories Required matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500 after:content-['*']"
+    >
+      Required Dropdown
+    </span>
+    <select
+      aria-label="Required Dropdown"
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-pointer"
+      required=""
+    >
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories Sample matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Sample Dropdown
+    </span>
+    <select
+      aria-label="Sample Dropdown"
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-transparent cursor-pointer"
+    >
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`app/components/atoms/Dropdown stories WithError matches markup snapshot 1`] = `
+<DocumentFragment>
+  <label
+    class="flex flex-col items-left font-medium"
+  >
+    <span
+      class="after:ml-1 after:text-red-500"
+    >
+      Dropdown With Error
+    </span>
+    <select
+      aria-label="Dropdown With Error"
+      class="w-80 h-8 text-black overflow-visible rounded ring-1 focus:ring-blue-500 ring-red-500 cursor-pointer"
+    >
+      <option
+        class=""
+        value="One"
+      >
+        Option One
+      </option>
+      <option
+        class=""
+        value="Two"
+      >
+        Option Two
+      </option>
+      <option
+        class=""
+        value="Three"
+      >
+        Option Three
+      </option>
+      <option
+        class=""
+        value="Four"
+      >
+        Option Four
+      </option>
+    </select>
+    <span
+      class="text-red-500 font-bold italic"
+    >
+      Something is wrong with your selection
+    </span>
+  </label>
+</DocumentFragment>
+`;

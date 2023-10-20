@@ -5,9 +5,9 @@ export const Container = tw.div`
 `
 
 export const Header = tw.header`
-  min-h-screen
   flex
   flex-col
   items-center
-  justify-center
+  justify-start
+  p-4
 `
