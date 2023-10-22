@@ -1,0 +1,15 @@
+diff --git a/node_modules/tailwind-styled-components/dist/tailwind.d.ts b/node_modules/tailwind-styled-components/dist/tailwind.d.ts
+index 58795f3..d65c690 100644
+--- a/node_modules/tailwind-styled-components/dist/tailwind.d.ts
++++ b/node_modules/tailwind-styled-components/dist/tailwind.d.ts
+@@ -24,8 +24,8 @@ export declare type RemoveIndex<T> = {
+  */
+ export declare type TailwindExoticComponent<P> = PickU<React.ForwardRefExoticComponent<P>, keyof React.ForwardRefExoticComponent<any>>;
+ declare type MergeProps<O extends object, P extends {} = {}> = P extends any ? IsAny<P, RemoveIndex<P> & O, P & O> : never;
+-declare type TailwindPropHelper<P, O extends object = {}> = PickU<MergeProps<O, P>, keyof MergeProps<O, P>>;
+-declare type TailwindComponentPropsWith$As<P extends object, O extends object, $As extends string | React.ComponentType<any> = React.ComponentType<P>, P2 = $As extends AnyTailwindComponent ? TailwindComponentAllInnerProps<$As> : $As extends IntrinsicElementsKeys | React.ComponentType<any> ? React.ComponentPropsWithRef<$As> : never> = P & O & TailwindPropHelper<P2> & {
++declare type TailwindPropHelper<P extends object = {}, O extends object = {}> = PickU<MergeProps<O, P>, keyof MergeProps<O, P>>;
++declare type TailwindComponentPropsWith$As<P extends object, O extends object, $As extends string | React.ComponentType<any> = React.ComponentType<P>, P2 extends object = $As extends AnyTailwindComponent ? TailwindComponentAllInnerProps<$As> : $As extends IntrinsicElementsKeys | React.ComponentType<any> ? React.ComponentPropsWithRef<$As> : never> = P & O & TailwindPropHelper<P2> & {
+     $as?: $As;
+ };
+ /**
