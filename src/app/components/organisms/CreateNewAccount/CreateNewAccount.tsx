@@ -1,7 +1,9 @@
 import React from 'react'
-import { ArrowToLeft } from '@styled-icons/boxicons-regular'
-import { ArrowToRight } from '@styled-icons/boxicons-regular/ArrowToRight'
-import { UserPlus } from '@styled-icons/boxicons-regular/UserPlus'
+import {
+  BiArrowToLeft as ArrowToLeft,
+  BiArrowToRight as ArrowToRight,
+  BiUserPlus as UserPlus,
+} from 'react-icons/bi'
 
 import pick from 'app/utils/pick'
 import Button from 'app/components/atoms/Button'

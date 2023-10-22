@@ -1,5 +1,5 @@
 import React from 'react'
-import { UserPlus } from '@styled-icons/boxicons-regular/UserPlus'
+import { BiUserPlus as UserPlus } from 'react-icons/bi'
 import type { Meta, StoryObj } from '@storybook/react'
 
 import Spinner from '../Spinner'

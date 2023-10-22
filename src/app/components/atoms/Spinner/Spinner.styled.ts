@@ -1,5 +1,5 @@
 import tw from 'tailwind-styled-components'
-import { LoaderAlt } from '@styled-icons/boxicons-regular/LoaderAlt'
+import { BiLoaderAlt as LoaderAlt } from 'react-icons/bi'
 
 export interface SizeProps {
   $size: number

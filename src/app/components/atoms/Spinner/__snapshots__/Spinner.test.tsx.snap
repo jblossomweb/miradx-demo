@@ -3,12 +3,12 @@
 exports[`app/components/atoms/Spinner stories Sample matches markup snapshot 1`] = `
 <DocumentFragment>
   <svg
-    aria-hidden="true"
-    class="StyledIconBase-sc-ea9ulj-0 kbSUTo animate-spinfast"
+    class="animate-spinfast"
     fill="currentColor"
-    focusable="false"
     height="40"
     role="status"
+    stroke="currentColor"
+    stroke-width="0"
     viewBox="0 0 24 24"
     width="40"
     xmlns="http://www.w3.org/2000/svg"
@@ -23,12 +23,12 @@ exports[`app/components/atoms/Spinner stories Sample matches markup snapshot 1`]
 exports[`app/components/atoms/Spinner stories Sized matches markup snapshot 1`] = `
 <DocumentFragment>
   <svg
-    aria-hidden="true"
-    class="StyledIconBase-sc-ea9ulj-0 kbSUTo animate-spinfast"
+    class="animate-spinfast"
     fill="currentColor"
-    focusable="false"
     height="80"
     role="status"
+    stroke="currentColor"
+    stroke-width="0"
     viewBox="0 0 24 24"
     width="80"
     xmlns="http://www.w3.org/2000/svg"
