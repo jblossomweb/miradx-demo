@@ -1,3 +1,17 @@
+# MiraDx Demo
+
+This is a basic demo, demonstrating a 2-step form.
+
+![](https://media.giphy.com/media/aihuG1Li9YrnXkJhpv/giphy.gif)
+
+## Demo Deployments
+
+### Live Demo: [https://miradx-demo.web.app/](https://miradx-demo.web.app/)
+
+### Component Library: [https://miradx-demo-storybook.web.app/](https://miradx-demo-storybook.web.app/)
+
+##
+
 This is a [`React 18`](https://react.dev/) project bootstrapped with [`vite`](https://vitejs.dev/).
 
 ## Prerequisites
