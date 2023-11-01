@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen, act } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import CreateNewAccount, {
-  DEBOUNCE_DELAY,
+  VALIDATION_DELAY,
   SUBMIT_DELAY,
 } from './CreateNewAccount'
 
@@ -37,7 +37,7 @@ describe('app/components/organisms/CreateNewAccount', () => {
     await user.type(email, 'foo@bar.com')
     await user.type(password, 'abcd1234!')
     // to account for the debounce, and ensure button is enabled
-    await act(async () => await delay(DEBOUNCE_DELAY + 1))
+    await act(async () => await delay(VALIDATION_DELAY + 1))
     await user.click(button)
     const firstName = await screen.findByRole('textbox', { name: 'First Name' })
     const lastName = await screen.findByRole('textbox', { name: 'Last Name' })
@@ -83,7 +83,7 @@ describe('app/components/organisms/CreateNewAccount', () => {
     await user.type(firstName, 'Fred')
     await user.type(lastName, 'Flintstone')
     // to account for the debounce, and ensure button is enabled
-    await act(async () => await delay(DEBOUNCE_DELAY + 1))
+    await act(async () => await delay(VALIDATION_DELAY + 1))
     await user.click(createButton)
     return {
       firstName,
@@ -126,7 +126,7 @@ describe('app/components/organisms/CreateNewAccount', () => {
       await user.type(email, 'foo@bar.com')
       await user.type(password, 'abcd1234!')
       // to account for the debounce, and ensure button is enabled
-      await act(async () => await delay(DEBOUNCE_DELAY + 1))
+      await act(async () => await delay(VALIDATION_DELAY + 1))
       expect(button).not.toBeDisabled()
     })
   })
@@ -168,7 +168,7 @@ describe('app/components/organisms/CreateNewAccount', () => {
       await user.type(firstName, 'Fred')
       await user.type(lastName, 'Flintstone')
       // to account for the debounce, and ensure button is enabled
-      await act(async () => await delay(DEBOUNCE_DELAY + 1))
+      await act(async () => await delay(VALIDATION_DELAY + 1))
       expect(createButton).not.toBeDisabled()
     })
 

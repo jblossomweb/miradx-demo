@@ -2,16 +2,12 @@ import { useState } from 'react'
 import postRandomHttpStatus, {
   type PostRandomHttpStatusResponse,
 } from 'app/services/postRandomHttpStatus'
-import type { Values } from './useNewAccountForms'
+import type FetchState from 'app/types/FetchState'
+import type { Values } from '../types/CreateNewAccountState'
 
 const DEFAULT_ERROR = 'Something went wrong'
 
-export interface PostState {
-  loading: boolean
-  error: Error | undefined
-  success: boolean
-  result: PostRandomHttpStatusResponse | undefined
-}
+export type PostState = FetchState<PostRandomHttpStatusResponse>
 
 const usePostNewAccount = (submitDelay = 0) => {
   const [loading, setLoading] = useState<PostState['loading']>(false)

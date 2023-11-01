@@ -6,7 +6,7 @@ import Dropdown from 'app/components/atoms/Dropdown'
 import Checkbox from 'app/components/atoms/Checkbox'
 import Button from 'app/components/atoms/Button'
 
-import type { Values } from '../hooks/useNewAccountForms'
+import type { Values } from '../types/CreateNewAccountState'
 import * as Styled from '../CreateNewAccount.styled'
 
 export const UserDetailsFields = [

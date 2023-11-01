@@ -3,20 +3,9 @@ import { useState, useEffect } from 'react'
 import isEmail from 'app/utils/isEmail'
 import hasDigits from 'app/utils/hasDigits'
 import hasSymbols from 'app/utils/hasSymbols'
+import useDebounced from 'app/hooks/useDebounced'
 
-import type { Values } from './useNewAccountForms'
-import useDebounced from './useDebounced'
-
-export interface Errors {
-  email?: string
-  password?: string
-  firstName?: string
-  lastName?: string
-  street?: string
-  city?: string
-  state?: string
-  zip?: string
-}
+import type { Values, Errors } from '../types/CreateNewAccountState'
 
 const useNewAccountErrors = (values: Values, debounceDelay?: number) => {
   const [emailError, setEmailError] = useState<string | undefined>()

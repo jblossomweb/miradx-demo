@@ -3,7 +3,7 @@ import React from 'react'
 import TextField from 'app/components/atoms/TextField'
 import Button from 'app/components/atoms/Button'
 
-import type { Values } from '../hooks/useNewAccountForms'
+import type { Values } from '../types/CreateNewAccountState'
 import * as Styled from '../CreateNewAccount.styled'
 
 export const UserLoginFields = ['email', 'password'] as (keyof Values)[]

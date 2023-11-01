@@ -8,27 +8,28 @@ import {
 import pick from 'app/utils/pick'
 import Button from 'app/components/atoms/Button'
 import Spinner from 'app/components/atoms/Spinner'
+import useFormSteps from 'app/hooks/useFormSteps'
 
 import useNewAccountForms from './hooks/useNewAccountForms'
-import useNewAccountErrors from './hooks/useNewAccountErrors'
 import usePostNewAccount from './hooks/usePostNewAccount'
 import useToastEffect from './hooks/useToastEffect'
-import useFormSteps from './hooks/useFormSteps'
 
 import UserLoginForm, { UserLoginFields } from './forms/UserLoginForm'
 import UserDetailsForm, { UserDetailsFields } from './forms/UserDetailsForm'
 
 import * as Styled from './CreateNewAccount.styled'
 
-export const DEBOUNCE_DELAY = 200
+export const VALIDATION_DELAY = 200
 export const SUBMIT_DELAY = 1000
 
 const CreateNewAccount: React.FC = () => {
   const [step, stepHandlers] = useFormSteps(2)
-  const [{ values, touched }, { onFocus, onChange }] = useNewAccountForms()
+  const [formState, formActions] = useNewAccountForms(VALIDATION_DELAY)
   const [postState, postNewAccount] = usePostNewAccount(SUBMIT_DELAY)
-  const errors = useNewAccountErrors(values, DEBOUNCE_DELAY)
   const Toaster = useToastEffect(postState)
+
+  const { values, errors, touched } = formState
+  const { onFocus, onChange } = formActions
 
   return (
     <>
