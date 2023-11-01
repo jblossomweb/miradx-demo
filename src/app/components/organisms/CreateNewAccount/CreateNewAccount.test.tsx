@@ -20,24 +20,24 @@ global.matchMedia =
     removeListener: jest.fn(),
   }))
 
-const delay = (ms: number) => new Promise((r) => setTimeout(r, ms))
+jest.useFakeTimers()
 
 describe('app/components/organisms/CreateNewAccount', () => {
+  const user = userEvent.setup({ delay: null })
   const renderStep1 = async () => {
-    const user = userEvent.setup()
     render(<CreateNewAccount />)
     const email = await screen.findByRole('textbox', { name: 'Email' })
     const password = await screen.findByLabelText('Password')
     const button = await screen.findByRole('button', { name: 'Next Step' })
-    return { email, password, button, user }
+    return { email, password, button }
   }
 
   const renderStep2 = async () => {
-    const { email, password, button, user } = await renderStep1()
+    const { email, password, button } = await renderStep1()
     await user.type(email, 'foo@bar.com')
     await user.type(password, 'abcd1234!')
     // to account for the debounce, and ensure button is enabled
-    await act(async () => await delay(VALIDATION_DELAY + 1))
+    await act(async () => jest.advanceTimersByTime(VALIDATION_DELAY + 1))
     await user.click(button)
     const firstName = await screen.findByRole('textbox', { name: 'First Name' })
     const lastName = await screen.findByRole('textbox', { name: 'Last Name' })
@@ -57,12 +57,11 @@ describe('app/components/organisms/CreateNewAccount', () => {
       addressCheckbox,
       prevButton,
       createButton,
-      user,
     }
   }
 
   const renderStep2AddressChecked = async () => {
-    const { addressCheckbox, user } = await renderStep2()
+    const { addressCheckbox } = await renderStep2()
     expect(addressCheckbox).toBeInTheDocument()
     await user.click(addressCheckbox)
     const street = await screen.findByRole('textbox', { name: 'Street' })
@@ -78,12 +77,11 @@ describe('app/components/organisms/CreateNewAccount', () => {
       lastName,
       prevButton,
       createButton,
-      user,
     } = await renderStep2()
     await user.type(firstName, 'Fred')
     await user.type(lastName, 'Flintstone')
     // to account for the debounce, and ensure button is enabled
-    await act(async () => await delay(VALIDATION_DELAY + 1))
+    await act(async () => jest.advanceTimersByTime(VALIDATION_DELAY + 1))
     await user.click(createButton)
     return {
       firstName,
@@ -121,12 +119,13 @@ describe('app/components/organisms/CreateNewAccount', () => {
     })
 
     it('should enable Next Step button when valid email and password are entered', async () => {
-      const { email, password, button, user } = await renderStep1()
+      const { email, password, button } = await renderStep1()
       expect(button).toBeDisabled()
       await user.type(email, 'foo@bar.com')
       await user.type(password, 'abcd1234!')
       // to account for the debounce, and ensure button is enabled
-      await act(async () => await delay(VALIDATION_DELAY + 1))
+      // await act(async () => await delay(VALIDATION_DELAY + 1))
+      await act(async () => jest.advanceTimersByTime(VALIDATION_DELAY + 1))
       expect(button).not.toBeDisabled()
     })
   })
@@ -163,12 +162,12 @@ describe('app/components/organisms/CreateNewAccount', () => {
     })
 
     it('should enable Create Account button when valid firstName and lastName are entered', async () => {
-      const { firstName, lastName, createButton, user } = await renderStep2()
+      const { firstName, lastName, createButton } = await renderStep2()
       expect(createButton).toBeDisabled()
       await user.type(firstName, 'Fred')
       await user.type(lastName, 'Flintstone')
       // to account for the debounce, and ensure button is enabled
-      await act(async () => await delay(VALIDATION_DELAY + 1))
+      await act(async () => jest.advanceTimersByTime(VALIDATION_DELAY + 1))
       expect(createButton).not.toBeDisabled()
     })
 
@@ -201,7 +200,6 @@ describe('app/components/organisms/CreateNewAccount', () => {
       const {
         street, //
         addressCheckbox,
-        user,
       } = await renderStep2AddressChecked()
       expect(addressCheckbox).not.toBeDisabled()
       await user.type(street, '123 Foo')
@@ -215,7 +213,6 @@ describe('app/components/organisms/CreateNewAccount', () => {
         state,
         zip,
         addressCheckbox,
-        user,
       } = await renderStep2AddressChecked()
       expect(street).toBeInTheDocument()
       expect(city).toBeInTheDocument()
@@ -252,7 +249,7 @@ describe('app/components/organisms/CreateNewAccount', () => {
       )
       await renderSubmitted()
       // to account for the intentional submit delay
-      await act(async () => await delay(SUBMIT_DELAY + 1))
+      await act(async () => jest.advanceTimersByTime(SUBMIT_DELAY + 1))
       const success = await screen.findByText(/your account was created/i)
       expect(success).toBeInTheDocument()
     })
@@ -264,7 +261,7 @@ describe('app/components/organisms/CreateNewAccount', () => {
       )
       await renderSubmitted()
       // to account for the intentional submit delay
-      await act(async () => await delay(SUBMIT_DELAY + 1))
+      await act(async () => jest.advanceTimersByTime(SUBMIT_DELAY + 1))
       const errors = await screen.findAllByText(/server error/i)
       expect(errors[0]).toBeInTheDocument()
     })
@@ -276,7 +273,7 @@ describe('app/components/organisms/CreateNewAccount', () => {
       )
       await renderSubmitted()
       // to account for the intentional submit delay
-      await act(async () => await delay(SUBMIT_DELAY + 1))
+      await act(async () => jest.advanceTimersByTime(SUBMIT_DELAY + 1))
       const errors = await screen.findAllByText(/something went wrong/i)
       expect(errors[0]).toBeInTheDocument()
     })
